@@ -22,6 +22,7 @@ Extensive experiments on **DDD17** and **DSEC** datasets show that MambaSeg achi
 ---
 
 ## **Performance**
+The best models on DDD17 and DSEC datasets are available on Google Drive.
 | **Dataset** | **mIoU (%)** | **Accuracy (%)** | **Download** |
 |-------------|-------------|-------------------|-------------|
 | **DDD17**  | **77.56**   | **96.33**        | [Download](https://drive.google.com/drive/folders/1NruRGwfK-9_Hi7ksXsptI8akbxdalllB?usp=drive_link) |
@@ -67,7 +68,7 @@ cd kernels/selective_scan && pip install .
 ## Datasets
 
 ### DDD17 Dataset
-The original DDD17 dataset with semantic segmentation labels can be downloaded here[https://github.com/Shathe/Ev-SegNet]. Additionally, the pre-processed DDD17 dataset with semantic labels is provided here[https://download.ifi.uzh.ch/rpg/ESS/ddd17_seg.tar.gz]. Please do not forget to cite DDD17 and Ev-SegNet if you are using the DDD17 with semantic labels.
+The original DDD17 dataset with semantic segmentation labels can be downloaded here[https://github.com/Shathe/Ev-SegNet]. Additionally, the pre-processed DDD17 dataset with semantic labels is provided here[https://download.ifi.uzh.ch/rpg/ESS/ddd17_seg.tar.gz]. Please do not forget to cite DDD17 and Ev-SegNet if you are using DDD17 with semantic labels.
 
 ### DSEC-Semantic Dataset
 The DSEC-Semantic dataset can be downloaded here[https://dsec.ifi.uzh.ch/dsec-semantic/]. The dataset should have the following format:
@@ -98,8 +99,9 @@ seq_name (e.g. zurich_city_00_a)
         │    └── ...
         └── timestamps.txt
 ```
-Note: Folder "ev_inf" contains paired image samples that are spatially aligned with the event data.
+- Note: Folder "ev_inf" contains paired image samples that are spatially aligned with the event data.
 
+- **You may encounter image and event alignment issues**. Please refer to this [repo](https://github.com/uzh-rpg/DSEC/issues/25) for image calibration.
 
 ## **Training**
 
