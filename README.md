@@ -1,6 +1,7 @@
 # **MambaSeg: Harnessing Mamba for Accurate and Efficient Image-Event Semantic Segmentation**
 
 Official PyTorch implementation of **MambaSeg**, a state-of-the-art framework for efficient and accurate image-event semantic segmentation based on Mamba.
+
 This paper is accepted by **the 40th AAAI Conference on Artificial Intelligence (AAAI-26).**
 
 **[PDF Link (Coming Soon)](INSERT_PDF_LINK_HERE)**
