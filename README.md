@@ -8,7 +8,7 @@ Official PyTorch implementation of **MambaSeg**, a state-of-the-art framework fo
 ---
 
 ## **Method Overview**
-![MambaSeg Framework](figs/framework.png)  
+![MambaSeg Framework](figs/framework.svg)  
 
 MambaSeg is a novel dual-branch multimodal semantic segmentation framework that leverages the **Mamba  architecture** for efficient and accurate fusion of **RGB images** and **event data**.  
 
