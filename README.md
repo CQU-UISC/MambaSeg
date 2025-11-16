@@ -135,7 +135,7 @@ The visualization highlights segmentation performance on **DDD17** and **DSEC** 
 
 If you think this implementation is useful for your work, please cite our paper:
 ```
-TMP
+Coming Soon
 ```
 
 
