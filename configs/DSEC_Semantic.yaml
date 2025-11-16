@@ -1,0 +1,40 @@
+DEVICE: 'cuda:1'
+NUM_WORKERS: 8
+SEED_NUM: 2
+
+DATASET:
+  name: 'DSECEvent'
+  path: '/nfs/share_hdd_6t/Datasets/zhuxx/DSEC_events' # Replace with your own path
+  require_paired_data: True
+  classes: 11
+  event_representation: 'voxel_grid'
+  fixed_duration: False  # If True, use fixed duration for event data
+  delta_t: 50
+  nr_events: 100000
+  nr_bins: 10
+  img_chnls: 3
+  data_type: 'fusion'
+  img_size: [440, 640]
+
+MODEL:
+  name: 'MambaSeg-2'
+  version_img: 'vmamba_tiny'
+  version_ev: 'vmamba_tiny'  
+  pretrained_img: './model/pretrained_weights/vmamba/vssm1_tiny_0230s_ckpt_epoch_264.pth'
+  pretrained_ev: './model/pretrained_weights/vmamba/vssm1_tiny_0230s_ckpt_epoch_264.pth'
+  event_rep: 'None'
+  fuse: 'DDIM'
+
+
+TRAIN:
+  lr_scheduler: 'fixed'
+  warmup_iters: 500
+  batch_size: 4
+  lr_init: 0.00003
+  num_epochs: 60
+  save_every_n_epochs: 30
+  log_dir: 'log/DDD17/test'
+
+EVAL:
+  batch_size: 6
+  weight_path: './log/DSECEvent/fusion/MambaSeg-2_DDIM_voxel_grid_4_fixed/best_model.pth'
