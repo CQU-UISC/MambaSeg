@@ -4,7 +4,7 @@ Official PyTorch implementation of **MambaSeg**, a state-of-the-art framework fo
 
 This paper is accepted by **the 40th AAAI Conference on Artificial Intelligence (AAAI-26).**
 
-**[PDF Link (Coming Soon)](INSERT_PDF_LINK_HERE)**
+**[MambaSeg: Harnessing Mamba for Accurate and Efficient Image-Event Semantic Segmentation](https://ojs.aaai.org/index.php/AAAI/article/view/42427)**
 
 ---
 
@@ -138,7 +138,17 @@ The visualization highlights segmentation performance on **DDD17** and **DSEC** 
 
 If you think this implementation is useful for your work, please cite our paper:
 ```
-Coming Soon
+@article{MambaSeg, 
+title={MambaSeg: Harnessing Mamba for Accurate and Efficient Image-Event Semantic Segmentation}, 
+volume={40}, 
+url={https://ojs.aaai.org/index.php/AAAI/article/view/42427}, 
+DOI={10.1609/aaai.v40i6.42427}, 
+number={6}, 
+journal={Proceedings of the AAAI Conference on Artificial Intelligence}, 
+author={Gu, Fuqiang and Li, Yuanke and Long, Xianlei and Ji, Kangping and Chen, Chao and Gu, Qingyi and Ni, Zhenliang}, 
+year={2026}, 
+month={Mar.}, 
+pages={4302–4310} }
 ```
 
 
